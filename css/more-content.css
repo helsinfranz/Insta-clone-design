@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  background: #000;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+
+.More-Options {
+  background-color: #222;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
+
+.more-options-options {
+  display: flex;
+  flex-direction: column;
+}
+.more-options-option {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 1.6rem;
+}
+
+.more-options-option:hover {
+    cursor: pointer;
+    background-color: #444;
+    border-radius: 1.1rem;
+}
+
+.more-options-selection-hover {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  margin-right: 10rem;
+}
+
+.more-options-selection-text {
+  font-size: 1.4rem;
+  letter-spacing: 0.9px;
+}
+
+.big-border {
+  background-color: #444;
+  padding: 0.3rem;
+  margin: 0.8rem -0.8rem;
+  /* border-top: 4px solid #444; */
+}
+
+.switch-account-option {
+  padding: 1.6rem;
+}
+
+.small-border {
+  background-color: #444;
+  padding: 0.1rem;
+  margin: 1rem -0.8rem;
+  /* border-top: 1px solid #444; */
+}
+
+.switch-account-option:hover {
+    cursor: pointer;
+    background-color: #444;
+    border-radius: 1.1rem;
+}

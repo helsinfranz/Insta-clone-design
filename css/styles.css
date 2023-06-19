@@ -81,7 +81,9 @@ body {
   display: grid;
   position: relative;
   grid-template-columns: 1fr 5fr;
-  column-gap: 22.4rem;
+  /* column-gap: 22.4rem; */
+  column-gap: 18.7rem;
+  /* 3.7rem change in margin-left's */
   /* display: flex;
   position: relative;
   grid-template-columns: 1fr 5fr;

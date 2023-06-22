@@ -1,0 +1,206 @@
+.main {
+  column-gap: 15rem;
+}
+
+.main-index {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-top: 4.9rem;
+}
+
+.top-status-tray {
+  display: inline-block;
+  position: relative;
+}
+
+.statuses {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.status-click {
+  width: 6.9rem;
+  height: 6.9rem;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, orange, rgb(161, 21, 161));
+  background-clip: padding-box;
+  padding: 2px;
+}
+
+.status-home {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  background: black;
+}
+
+.arrows > div {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow-left {
+  top: 40%;
+  left: 2%;
+  transform: translate(-2%, -40%);
+}
+
+.arrow-right {
+  top: 40%;
+  right: 2%;
+  transform: translate(-2%, -40%);
+}
+
+.arrows > div > svg {
+  fill: white;
+}
+
+.arrow-left-svg {
+  transform: rotate(-90deg);
+}
+
+.arrow-right-svg {
+  transform: rotate(90deg);
+}
+
+.aside-right-tray {
+  max-width: 32rem;
+  margin-top: 1rem;
+}
+
+.suggestions-only {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.my-aside-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.my-aside-profile img {
+  border-radius: 50%;
+}
+
+.all-names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.all-names p {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.account-switch {
+  color: rgb(0, 149, 246);
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hardcode-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hardcode-heading h3 {
+  color: #999;
+}
+
+.hardcode-heading a {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hardcode-heading a:hover {
+  color: #777;
+}
+
+.suggested-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.suggest-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.suggest-profile-dp {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.name-or-mutual_followers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name-or-mutual_followers p {
+  font-size: 1.3rem;
+  color: #999;
+}
+
+.suggest-account-follow-button {
+  margin-left: auto;
+  color: rgb(0, 149, 246);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  color: #777;
+}
+
+.Links-to-navigate ul li{
+    margin-bottom: 0.7rem;
+}
+
+.Links-to-navigate ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.aside-nav-link-none:hover {
+  text-decoration: none;
+}
+
+.aside-nav-links li:not(:last-child)::after {
+  content: "\00B7";
+  margin: 0 0.25em 0 0.25em;
+}
+
+.aside-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside-nav-link {
+  list-style: none;
+}

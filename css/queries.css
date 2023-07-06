@@ -1,0 +1,118 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1264px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 79em) {
+  .main {
+    grid-template-columns: 1fr 14fr;
+    column-gap: 5rem;
+  }
+  .left-tray {
+    padding: 4rem 1.65rem 2.6rem 2.4rem;
+  }
+  .Instagram-logo {
+    display: none;
+  }
+  .Instagram-small-logo {
+    display: block;
+  }
+  .navigation > div {
+    padding: 1rem 0.75rem;
+  }
+  .nav-text {
+    display: none;
+  }
+  .More {
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (max-width: 74em) {
+  .main-index {
+    display: flex;
+    justify-content: center;
+  }
+  .aside-right-tray {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .main {
+    display: block;
+  }
+  .main-index {
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
+  }
+  .left-tray {
+    display: none;
+  }
+  .small-display-navbars {
+    display: block;
+  }
+  .upper-nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: solid 1px #333;
+    padding: 0.3rem 1.4rem;
+  }
+  .Instagram-logo {
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem !important;
+  }
+  .nav-search{
+    gap: 1rem;
+    width: 27rem;
+    height: 3.5rem;
+    background-color: #222;
+  }
+  .SVG-small{
+    margin-left: 1rem;
+  }
+  .Text-small {
+    font-size: 1.4rem;
+    letter-spacing: 0.9px;
+    color: #999;
+    font-weight: 300;
+  }
+  .lower-nav {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    border-top: solid 1px #333;
+  }
+  .navigation {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0rem;
+  }
+  .upper-navigation{
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem
+  }
+  .nav-search{
+    margin-left: auto !important;
+  }
+  .navigation > div {
+    padding: 1.2rem 0.75rem;
+  }
+  .navigation > div:hover {
+    background-color: black;
+  }
+  .navigation > div:hover:active .nav-svg {
+    transform: scale(0.9);
+  }
+}

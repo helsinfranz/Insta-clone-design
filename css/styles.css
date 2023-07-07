@@ -78,7 +78,9 @@ body {
 }
 
 /* Small Display Things Removed */
-
+.For_Mobile_Devices{
+  display: none;
+}
 .Instagram-small-logo{
   display: none;
 }

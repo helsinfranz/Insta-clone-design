@@ -62,6 +62,7 @@
     z-index: 9999;
     border-bottom: solid 1px #333;
     padding: 0.3rem 1.4rem;
+    /* padding: 3px 14px; */
   }
   .Instagram-logo {
     align-items: center;
@@ -114,5 +115,34 @@
   }
   .navigation > div:hover:active .nav-svg {
     transform: scale(0.9);
+  }
+}
+@media (max-width: 40.25em) {
+  .main{
+    display: none;
+  }
+  .For_Mobile_Devices{
+    display: flex;
+    height: 100vh;
+  }
+  .Center_Screen_Mobile{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+  }
+  .Download-Buttons{
+    display: flex;
+    gap: 1rem;
+  }
+  .Center_Screen_Mobile a img{
+    width: 20.1rem;
+    height: 6rem;
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+    box-sizing: unset;
+    border: solid 1px #555;
   }
 }

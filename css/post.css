@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  background: #000;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #f5f5f5;
+  background-color: black;
+}
+
+.post {
+  height: 100vh;
+}
+
+.background {
+  z-index: 0;
+  height: inherit;
+  position: relative;
+  background-color: #2222228c;
+}
+
+.popup {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  /* border-radius: 1.35rem; */
+  display: flex;
+}
+
+/* Copyed CSS from parent page */
+
+.content {
+  position: relative;
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.main-content-images {
+  width: 62rem;
+  height: 77.5rem;
+}
+
+.details {
+  border-left: solid 1px #222;
+  position: relative;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  width: 49rem;
+  /* border-bottom: 1px solid #222; */
+  font-size: 1.3rem;
+}
+
+.layer-tab {
+  padding: 1.25rem;
+  border-bottom: 1px solid #222;
+}
+
+.main-card-layer {
+  /* display: block; */
+  padding: 1.25rem;
+  height: 56rem;
+  overflow-y: auto;
+}
+.main-card-layer::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom-layers-tab {
+  border-top: 1px solid #222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+
+.bottom-like-layer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.bottom-layer {
+  padding: 1.25rem;
+}
+
+.user-definition {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-status-home {
+  width: 4rem;
+  height: 4rem;
+}
+
+.content-status-click {
+  width: 4.3rem;
+  height: 4.3rem;
+  padding: 1.5px;
+  cursor: pointer;
+}
+
+.content-username-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.user-definition p {
+  color: rgb(168, 168, 168);
+}
+
+.content-usename {
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content-usename:hover {
+  color: rgb(168, 168, 168);
+}
+
+/* .content-usename::after {
+    color: rgb(168, 168, 168);
+    content: "•";
+    margin: 0 0.5rem 0 0.5rem;
+  } */
+
+.user-definition > :last-child {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.more-options-button:hover {
+  fill: rgb(168, 168, 168);
+}
+
+.content {
+  border-radius: 0.25rem;
+  border: 1px solid #111;
+  overflow: hidden;
+  position: relative;
+}
+
+.content-content {
+  width: 49rem;
+  height: 49rem;
+}
+
+.content-arrow {
+  top: 50%;
+  transform: translate(-2%, -50%);
+}
+
+.number-of-photos {
+  position: absolute;
+  display: flex;
+  gap: 0.4rem;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.selected-photo {
+  background-color: white;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+.remaining-photo {
+  background-color: #777;
+  width: 0.6rem;
+  border-radius: 50%;
+}
+
+.interaction-icons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.interaction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.interaction-details > p {
+  font-size: 1rem;
+  color: #999;
+}
+
+.interactions {
+  cursor: pointer;
+}
+
+.interaction-icon:hover {
+  color: rgb(168, 168, 168);
+  fill: rgb(168, 168, 168);
+}
+
+.interaction-icons > :last-child {
+  margin-left: auto;
+}
+
+.selectable-interaction-icon:active {
+  fill: white;
+}
+
+.selectable-interaction-icon-heart:active {
+  color: rgb(255, 48, 64);
+  fill: rgb(255, 48, 64);
+}
+
+.liked-by {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.liked-people {
+  display: flex;
+  align-items: center;
+}
+
+.liked-people-img {
+  background-color: black;
+  margin-right: -0.4rem;
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.liked-by-text {
+  word-wrap: break-word;
+}
+
+.liked-by-text strong {
+  cursor: pointer;
+}
+
+.caption {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.username-content {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.caption-text {
+  word-wrap: break-word;
+}
+
+.content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.content-main-top {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.content-main-bottom {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: #999;
+  font-weight: 500;
+}
+
+.all-comments {
+  color: rgb(168, 168, 168);
+}
+
+.all-comments a {
+  cursor: pointer;
+}
+
+.top-rated-comment-replies {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.showcase-reply {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.showcase-reply > :last-child {
+  margin-left: auto;
+}
+
+.featured-username {
+  font-weight: bold;
+}
+
+.showcase-reply p a {
+  color: rgb(224, 241, 255);
+  cursor: pointer;
+}
+
+.featured-like-button:hover {
+  fill: rgb(54, 54, 54);
+  cursor: pointer;
+}
+
+/* .add-comments-tab {
+  margin-bottom: 1.8rem;
+} */
+
+.add-comments-tab form {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.add-comments-textarea[contenteditable]:empty::before {
+  content: "Add a comment…";
+  color: rgb(168, 168, 168);
+}
+
+.add-comments-textarea {
+  font-family: "Roboto", Arial, sans-serif;
+  margin-top: 0.3rem;
+  resize: none;
+  background-color: transparent;
+  color: #f5f5f5;
+  width: 85%;
+  outline: none;
+  border: none;
+  min-height: 1.8rem;
+  height: auto;
+}
+
+.emoji-selector {
+  /* margin-left: auto; */
+  cursor: pointer;
+}
+
+.emoji-selector-svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Not active color
+color: rgb(179, 219, 255);
+*/
+
+.post-button {
+  color: rgb(0, 149, 246);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  color: rgb(224, 241, 255);
+}
+/* .emoji-selector-svg:hover {
+  fill: rgb(54, 54, 54);
+} */
+
+/* --> ^ <-- */
